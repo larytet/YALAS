@@ -84,7 +84,7 @@ An exploited vulnerability appears in the stream like this
 CFGB AFGB AFGB ... CCGB ACGB ... CFGB AFGB AFGB
 ```
 
-Applying Markov process I get 92% vs 0.15%
+Applying Markov process I get 92% vs 0.15% for "good" and "bad" symbol
 ```
 $ ./is_good.py -c CFGB -m ~/YALAS/model.pki
 0.928
