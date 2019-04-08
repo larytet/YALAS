@@ -58,6 +58,30 @@ Example of the log for a simple HTTP server in Golang
 5CA8392C.1409F796	5FDE	5FDE	3E8	3E8	5CA7C201	http-server	5	syscall_accept4	53A8EA	63612A0CD747	0	3	70	0		FFFFFFFFFFFFFFF5
 ```
 
+The log above is translated into the stream of symbols 
+```
+CFDB AFDB AFDB CCDB ACDB ACDB CFGB AFGB AFGB CFGB AFGB AFGB CFGB AFGB AFGB CFGB....
+```
+
+An exploited vulnerability appears in the stream like this 
+```
+CFGB AFGB AFGB ... CCGB ACGB ... CFGB AFGB AFGB
+```
+
+Applying Markov process I get 92% vs 0.15%
+```
+$ ./is_good.py -c CFGB -m ~/YALAS/model.pki
+0.928
+$ ./is_good.py -c AFGB -m ~/YALAS/model.pki
+0.948
+$ ./is_good.py -c CCGB -m ~/YALAS/model.pki
+0.017
+$ ./is_good.py -c ACGB -m ~/YALAS/model.pki
+0.015
+```
+
+
+
 A sample of the driver stats
 
 ```
