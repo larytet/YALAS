@@ -21,6 +21,7 @@ The goals of the system:
 *  Monitor containers and VMs peformance.
 
 
+# Visuals
 
 Typical performance impact (single core VM) 
 
