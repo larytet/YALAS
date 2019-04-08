@@ -150,4 +150,10 @@ timer.jiffies                4297103664
 ```
 
 Links
+
 * https://www4.comp.polyu.edu.hk/~csxluo/DNSINFOCOM18.pdf
+* https://github.com/jaegertracing/jaeger
+* https://www.twistlock.com/labs-blog/
+* https://github.com/draios/sysdig https://www.businessinsider.com/30-cybersecurity-startups-2019-3
+* https://www.styra.com/
+* https://www.aporeto.com/
