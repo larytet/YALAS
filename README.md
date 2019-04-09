@@ -1,4 +1,4 @@
-Yet Another Linux Audit System
+# Yet Another Linux Audit System
 
 The goals of the system:
 
@@ -19,6 +19,10 @@ The goals of the system:
 *  Detect attempts of memory spray, attempts of exploit zero-day Linux kernel vulnerabilities.
 *  Fingerprinting, analyzing and comparison of applications behaviour.
 *  Monitor containers and VMs peformance.
+
+# What is does 
+
+The tool learns what is the "correct behavior" when the container is under the system test/unitest. The tool creates a set of rules which describe the correct behavior. In the production environment the tool alerts the administrator if the behavior deviates from the the previously observed behavior (breaks the rules).
 
 
 # Visuals
