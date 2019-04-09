@@ -81,8 +81,7 @@ aCGDB cCDDB aCDDBaCDDBcFDDB aFDDBaFDDBaFDDB cAGDB aAGDBbFDDB cAGDB ...
 
 An exploited vulnerability appears in the stream like this 
 ```
-... aFDDBaFDDBaFDDB aFDDBaFDDBaFDDB aFDDBaFDDBaFDDB aFDDBaFDDB cCGDBaCGDBbFDDBaFDDB ... 
-
+... aFDDBaFDDBaFDDB aFDDBaFDDBaFDDB aFDDBaFDDBaFDDB aFDDBaFDDB cCGDBaCGDBbFDDBaFDDBaFDDB aFDDB cCGDB aCGDBbFDDBaFDDBaFDDB ...
 ```
 
 Applying Markov process I get 92% vs 0.15% for "good" and "bad" symbol
@@ -93,6 +92,8 @@ $ ./is_good.py -c cCGDBaCGDBbFDDBaFDDB -m ~/YALAS/model.pki
 0.22
 $ ./is_good.py -c aFDDBaFDDB -m ~/YALAS/model.pki
 0.54
+$ ./is_good.py -c cCGDB  -m ~/YALAS/model.pki
+0.05
 ```
 
 
