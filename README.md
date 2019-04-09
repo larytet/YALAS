@@ -1,6 +1,10 @@
 # Yet Another Linux Audit System
 
-The goals of the system:
+# What it does 
+
+The tool learns what is the "correct behavior" when the container is under the system test/unitest. The tool creates a set of rules which describe the correct behavior. In the production environment the tool alerts the administrator if the behavior deviates from the the previously observed behavior (breaks the rules).
+
+# Goals
 
 *  Collect critical system information - writing to files, modification of system files, sending data to the outside world, shared memory operations, TTY logging, follow process execution chains.
 *  The design attempts to minimise the performance impact. The code targets system calls latency impact under 5 micro in the worst case and under 1 micro in the typical case. On a heavily loaded 16 core HTTP server performing lot of system calls the driver consumes roughly an equivalent of one core.
@@ -19,10 +23,6 @@ The goals of the system:
 *  Detect attempts of memory spray, attempts of exploit zero-day Linux kernel vulnerabilities.
 *  Fingerprinting, analyzing and comparison of applications behaviour.
 *  Monitor containers and VMs peformance.
-
-# What is does 
-
-The tool learns what is the "correct behavior" when the container is under the system test/unitest. The tool creates a set of rules which describe the correct behavior. In the production environment the tool alerts the administrator if the behavior deviates from the the previously observed behavior (breaks the rules).
 
 
 # Visuals
@@ -153,7 +153,7 @@ never                                 0 timer.ms                         236531 
 timer.jiffies                4297103664 
 ```
 
-Links
+# Links
 
 * https://www4.comp.polyu.edu.hk/~csxluo/DNSINFOCOM18.pdf
 * https://github.com/jaegertracing/jaeger
