@@ -89,14 +89,12 @@ An exploited vulnerability appears in the stream like this
 
 Applying Markov process I get 92% vs 0.15% for "good" and "bad" symbol
 ```
-$ ./is_good.py -c CFGB -m ~/YALAS/model.pki
-0.928
-$ ./is_good.py -c AFGB -m ~/YALAS/model.pki
-0.948
-$ ./is_good.py -c CCGB -m ~/YALAS/model.pki
-0.017
-$ ./is_good.py -c ACGB -m ~/YALAS/model.pki
-0.015
+$ ./is_good.py -c aFDDBaFDDBaFDDB -m ~/YALAS/model.pki
+0.54
+$ ./is_good.py -c cCGDBaCGDBbFDDBaFDDB -m ~/YALAS/model.pki
+0.22
+$ ./is_good.py -c aFDDBaFDDB -m ~/YALAS/model.pki
+0.54
 ```
 
 
