@@ -76,7 +76,7 @@ Example of the log for a simple HTTP server in Golang
 
 The log above is translated into the stream of symbols 
 ```
-CFDB AFDB AFDB CCDB ACDB ACDB CFGB AFGB AFGB CFGB AFGB AFGB CFGB AFGB AFGB CFGB....
+aCGDB cCDDB aCDDBaCDDBcFDDB aFDDBaFDDBaFDDB cCGDB aCGDBbFDDBaFDDBaFDDB aFDDBaFDDB aFDDB aFDDBaFDDB aFDDB cCGDBaCGDBbFDDBaFDDBaFDDB  aFDDBaFDDB aFDDBcCGDBaCGDBbFDDBaFDDBaFDDB aFDDBaFDDB cCGDBaCGDBbFDDBaFDDBaFDDB ...
 ```
 
 An exploited vulnerability appears in the stream like this 
