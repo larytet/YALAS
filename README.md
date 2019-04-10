@@ -80,26 +80,26 @@ Example of the log for a simple HTTP server in Golang
 
 The log above is translated into the stream of symbols 
 ```
-AQHXZ AQHXZCNHXZ ANHXZANHXZCLKXZ ALKXZALKXZCLKXZ ALKXZALKXZCLKXZ ALKXZALKXZCLKXZ ALKXZALKXZCLKXZ ALKXZALKXZCLKXZ ALKXZALKXZCLKXZ ALKXZALKXZCLKXZ
+AQHdhf AQHdhfCQHdof AQHdhfAQHdifCLKdof
 ```
 
 An exploited vulnerability appears in the stream like this 
 ```
-...  ALKXZALKXZCLKXZ ALKXZALKXZAQHXZ AQHXZCNHXZ ANHXZANHXZCNKXZ ANKXZCNKXZ ANKXZCNKXZ ANKXZCNKXZ ALKXZALKXZCLKXZ ...
+...  AQHdhfAQHdifCLKdof ALKdhf ALKdhfCNKdof ANKdifCLKdof ALKdofALKdjfCLKdof
 ```
 
-Applying Markov process I get 82% vs 10% for "good" and "bad" symbol
+Applying Markov process I get 69% vs 10% for "good" and "bad" symbol
 ```
-$ ./is_good.py -c ALKXZALKXZCLKXZ -m ~/YALAS/model.pki
-0.82
-$ ./is_good.py -c ALKXZALKXZAQHXZ -m ~/YALAS/model.pki
-0.35
+$ ./is_good.py -c ALKdofALKdjfCLKdof -m ~/YALAS/model.pki
+0.69
+$ ./is_good.py -c ALKdhf -m ~/YALAS/model.pki
+0.17
 $ ./is_good.py -c AQHXZCNHXZ -m ~/YALAS/model.pki
 0.06
-$ ./is_good.py -c ANHXZANHXZCNKXZ  -m ~/YALAS/model.pki
-0.08
-$ ./is_good.py -c ANKXZCNKXZ  -m ~/YALAS/model.pki
-0.10
+$ ./is_good.py -c ALKdhfCNKdof  -m ~/YALAS/model.pki
+0.12
+$ ./is_good.py -c ANKdifCLKdof  -m ~/YALAS/model.pki
+0.11
 ```
 
 
