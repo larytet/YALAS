@@ -88,7 +88,7 @@ An exploited vulnerability appears in the stream like this
 ...  ALKXZALKXZCLKXZ ALKXZALKXZAQHXZ AQHXZCNHXZ ANHXZANHXZCNKXZ ANKXZCNKXZ ANKXZCNKXZ ANKXZCNKXZ ALKXZALKXZCLKXZ ...
 ```
 
-Applying Markov process I get 92% vs 0.22% for "good" and "bad" symbol
+Applying Markov process I get 82% vs 10% for "good" and "bad" symbol
 ```
 $ ./is_good.py -c ALKXZALKXZCLKXZ -m ~/YALAS/model.pki
 0.82
