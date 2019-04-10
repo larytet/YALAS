@@ -1,4 +1,4 @@
-# Yet Another Linux Audit System
+# Yet another Linux audit system
 
 # What it does 
 
