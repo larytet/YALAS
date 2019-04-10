@@ -80,12 +80,12 @@ Example of the log for a simple HTTP server in Golang
 
 The log above is translated into the stream of symbols 
 ```
-AQHdhf AQHdhfCQHdof AQHdhfAQHdifCLKdof
+AQHdhf AQHdhfCQHdof AQHdhfAQHdifCLKdof ...
 ```
 
 An exploited vulnerability appears in the stream like this 
 ```
-...  AQHdhfAQHdifCLKdof ALKdhf ALKdhfCNKdof ANKdifCLKdof ALKdofALKdjfCLKdof
+...  AQHdhfAQHdifCLKdof ALKdhf ALKdhfCNKdof ANKdifCLKdof ALKdofALKdjfCLKdof ...
 ```
 
 Applying Markov process I get 69% vs 10% for "good" and "bad" symbol
