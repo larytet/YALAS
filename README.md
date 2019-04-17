@@ -1,6 +1,6 @@
 # Yet another Linux audit system
 
-If you think your company needs this tool do not hesitate to contact me via [issues](https://github.com/larytet/YALAS/issues) or [LinkedIn](https://www.linkedin.com/in/arkadymiasnikov/)
+If you think your company needs this tool do not hesitate to contact me via [issues](https://github.com/larytet/YALAS/issues) or [LinkedIn](https://www.linkedin.com/in/arkadymiasnikov/).
 
 # What it does 
 
