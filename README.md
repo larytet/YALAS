@@ -85,26 +85,18 @@ Example of the log for a simple HTTP server in Golang
 
 The log above is translated into the stream of symbols 
 ```
-AQHdhf AQHdhfCQHdof AQHdhfAQHdifCLKdof ...
+ASLdhwf ASLdhwf  ASLdhwf CMLdowf AMLdjrf AMLdiwf BSLdhwf ASLdhwf ...
+ ...
 ```
 
-An exploited vulnerability appears in the stream like this 
+This is how an exploited vulnerability appears in the events stream 
 ```
-...  AQHdhfAQHdifCLKdof ALKdhf ALKdhfCNKdof ANKdifCLKdof AQHXZCNHXZ ALKdofALKdjfCLKdof ...
+...  ASLdhwf ASLdhwf ASLdhwf  COLdowf AOLdjwf AOLdiwf BSLdhwf ASLdhwf ...
 ```
 
-Applying Markov process I get 69% vs 10% for "good" and "bad" symbol
+Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 ```
-$ ./is_good.py -c ALKdofALKdjfCLKdof -m ~/YALAS/model.pki
-0.69
-$ ./is_good.py -c ALKdhf -m ~/YALAS/model.pki
-0.17
-$ ./is_good.py -c AQHXZCNHXZ -m ~/YALAS/model.pki
-0.06
-$ ./is_good.py -c ALKdhfCNKdof  -m ~/YALAS/model.pki
-0.12
-$ ./is_good.py -c ANKdifCLKdof  -m ~/YALAS/model.pki
-0.11
+... 0.591 0.591 0.591 0.014 0.012 0.012 0.591 0.591 ...
 ```
 
 # Links
