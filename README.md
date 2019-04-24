@@ -1,10 +1,8 @@
 # Yet another Linux audit system
 
+YALAS has two components - a kernel driver and a user space code taking care of the behaviour model.  YALAS learns what is the "correct behaviour" when the container is under the system test/unitest. YALAS automatically generates a set of rules which describe the expected behaviour. In the production environment the tool alerts the administrator if the behaviour deviates from the the previously observed behaviour (breaks the rules). Yes, YALAS is as good as it sounds. 
+
 The code base is producton grade and ready for deployment. If your company needs this tool do not hesitate to contact me via [issues](https://github.com/larytet/YALAS/issues) or [LinkedIn](https://www.linkedin.com/in/arkadymiasnikov/). 
-
-# What it does 
-
-The tool learns what is the "correct behavior" when the container is under the system test/unitest. The tool creates a set of rules which describe the correct behavior. In the production environment the tool alerts the administrator if the behavior deviates from the the previously observed behavior (breaks the rules).
 
 # Goals
 
