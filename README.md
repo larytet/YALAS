@@ -6,7 +6,7 @@ The code base is producton grade and ready for deployment. If your company needs
 
 # Goals
 
-*  Collect critical system information - writing to files, modification of system files, sending data to the outside world, shared memory operations, TTY logging, follow process execution chains.
+*  Collect critical system information - writing to files, modification of system files, sending data to the outside world, shared memory operations, TTY, follow process execution chains.
 *  Advanced debug and monitor infrastructure.
 *  Collect the system information, filter and aggregate the information, compress it, deliver to an application for further processing. The design targets approximately 1:1000 reduction of the total amount of information. 
 *  Support collection of the patterns of I/O requests, network access - applications fingerprints.
