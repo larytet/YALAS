@@ -106,3 +106,14 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * https://www.styra.com/
 * https://www.aporeto.com/
 * https://gvisor.dev/
+
+# Q&A
+
+* Is it a Prometheus?
+
+No, YALAS is a generic system monitor which does not require any dedicated code in the container. YALAS collects system calls performed by the applications.YALAS goal is to catch zero days targeting containers. 
+
+YALAS facilitates incident response, forensics. The engine allow placing an arbitrary test point in the code and monitoring the performance of the code in this point. There is no need to rebuild anything. Any system call the application performs will be collected, time stamped by the kernel.
+
+The engine dedups the events, figures out repetitive patters, catches deviations from the previous behavior
+This is done for any process in the container and for any container on a VM.
