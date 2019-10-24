@@ -1,6 +1,6 @@
 # Yet another Linux audit system
 
-YALAS has two components - a kernel driver and a user space code taking care of the behaviour model.  YALAS learns what is the "correct behaviour" when the container is under the system test/unitest. YALAS automatically generates a set of rules which describe the expected behaviour. In the production environment the tool alerts the administrator if the behaviour deviates from the the previously observed behaviour (breaks the rules). Yes, YALAS is as good as it sounds. 
+YALAS has two components - a kernel driver and a user space code taking care of the behaviour model.  YALAS learns what is the "correct behaviour" when the container is under the system test/unitest. YALAS automatically generates a set of rules which describe the expected behaviour. In the production environment the tool alerts the administrator if the behaviour deviates from the previously observed behaviour (breaks the rules). Yes, YALAS is as good as it sounds. 
 
 The code base is producton grade and ready for deployment. If your company needs this tool do not hesitate to contact me via **[Issues](https://github.com/larytet/YALAS/issues)** or **[LinkedIn](https://www.linkedin.com/in/arkadymiasnikov/)**. 
 
@@ -18,12 +18,12 @@ The code base is producton grade and ready for deployment. If your company needs
 *  Prevent attempts of rights escalation.
 *  Recognize debugger like behaviour.
 *  Detect attempts of memory spray, attempts of exploit zero-day Linux kernel vulnerabilities.
-*  Fingerprinting, analyzing and comparison of applications behaviour.
-*  Monitor containers and VMs peformance.
+*  Fingerprinting, analyzing, and comparison of the applications behaviour.
+*  Monitor containers and VMs performance.
 
 # Peformace 
 
-*  The design attempts to minimise the performance impact. The code targets system calls latency impact under 5 micro in the worst case and under 1 micro in the typical case. On a heavily loaded 16 core HTTP server performing lot of system calls the driver consumes roughly an equivalent of half a core.
+*  The design attempts to minimise the performance impact. The code targets system calls latency impact under 5 micro in the worst case and under 1 micro in the typical case. On a heavily loaded 16 core HTTP server performing lot of system calls the driver consumes roughly an equivalent of half a CPU core.
 *  Zero-copy communication between kernel and user space.
 *  Binary protocol between application and the driver.
 
