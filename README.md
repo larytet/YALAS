@@ -21,7 +21,7 @@ The code base is producton grade and ready for deployment. If your company needs
 *  Fingerprinting, analyzing, and comparison of the applications behaviour.
 *  Monitor containers and VMs performance.
 
-# Peformace 
+# Performace 
 
 *  The design attempts to minimise the performance impact. The code targets system calls latency impact under 5 micro in the worst case and under 1 micro in the typical case. On a heavily loaded 16 core HTTP server performing lot of system calls the driver consumes roughly an equivalent of half a CPU core.
 *  Zero-copy communication between kernel and user space.
