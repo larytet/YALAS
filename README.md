@@ -117,6 +117,6 @@ No, YALAS is a generic system monitor which does not require any dedicated code 
 YALAS facilitates incident response, forensics. The engine allow placing an arbitrary test point in the code and monitoring the performance of the code in this point. There is no need to rebuild anything. Any system call the application performs will be collected, time stamped by the kernel.
 
 The engine dedups the events, figures out repetitive patters, catches deviations from the previous behavior
-This is done for any process in the container and for any container on a VM.
+This is done for any process/kernel thread in the container and for any container on a VM.
 
 The engine allows to freeze a process if a certain condition met in order to help investigating. 
