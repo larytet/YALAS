@@ -120,3 +120,7 @@ The engine dedups the events, figures out repetitive patters, catches deviations
 This is done for any process/kernel thread in the container and for any container on a VM.
 
 The engine allows to freeze a process if a certain condition met in order to help investigating. 
+
+* Is YALAS aware of light threads, Go routines?
+
+This is something that possilble, but not implemented yet.
