@@ -28,7 +28,7 @@ The code base is producton grade and ready for deployment. If your company needs
 *  Binary protocol between application and the driver.
 
 
-# Visuals
+# Running samples
 
 Typical performance impact (single core VM) 
 
