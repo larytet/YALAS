@@ -108,6 +108,10 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * https://gvisor.dev/
 * https://www.aquasec.com/
 
+# Issues discovered by YALAS
+
+* https://github.com/golang/go/issues/36640
+
 # Q&A
 
 * Is it a Prometheus?
