@@ -107,7 +107,7 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * https://www.aporeto.com/
 * https://gvisor.dev/
 * https://www.aquasec.com/
-* https://www.guardicore.com/  - this looks like a fully integrated solution
+* https://www.guardicore.com/ 
 
 # Issues discovered by YALAS
 
@@ -129,3 +129,7 @@ The engine allows to freeze a process if a certain condition met in order to hel
 * Is YALAS aware of light threads, Go routines?
 
 This is something that possilble, but not implemented yet.
+
+* Guardicore ?
+
+Guardicore Centra carefully watches networking, maps end points communication, enforces a set of rules defined by the client. The existing product has minimal support for docker, does not collect file system events, does not follow process/thread life cycle, does not perform DPI. 
