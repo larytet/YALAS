@@ -107,6 +107,7 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * https://www.aporeto.com/
 * https://gvisor.dev/
 * https://www.aquasec.com/
+* https://www.guardicore.com/  - this looks like a fully integrated solution
 
 # Issues discovered by YALAS
 
