@@ -81,7 +81,10 @@ Example of the log for a simple HTTP server in Golang
 5CAAE964.A6FAC28		0	http-server	25	syscall_read	29D4B2	5E26B1DA870C4	0	5	1000			0
 ```
 
-Pay attention to [/etc//localtime]. This is not a bug https://github.com/golang/go/issues/36640
+Pay attention to */etc//localtime*. This is not a bug: https://github.com/golang/go/issues/36640 
+
+Another example of the consistent behaviour of the Golang runtime is the 1000/80000 buffer size in the read/write operations. 
+
 The log above is translated into the stream of symbols 
 ```
 ASLdhwf ASLdhwf  ASLdhwf CMLdowf AMLdjrf AMLdiwf BSLdhwf ASLdhwf ...
