@@ -1,3 +1,5 @@
+# Containers
+
 From https://sysdig.com/press-releases/sysdig-2019-container-usage-report/
 
 50% of containers live less than five minutes
@@ -19,3 +21,9 @@ Go and Node.js overtake Java as top cloud application frameworks
 There are clear winners for programming languages and frameworks. Go and Node.js overtook Java as top cloud app frameworks, neither of which made the top 10 list last year. Java has long been one of the most prominent programming languages, but newer options like Go, created by Google engineers, have gained favor in part because of their ease of use.
 
 “With container density doubling since our last report, it’s evident that the rate of adoption is accelerating as usage matures. With that said, containers are black boxes that work well as application building blocks, but they are invisible to conventional security and visibility tools,” said Suresh Vasudevan, Sysdig Chief Executive Officer. “With this report, we hope to educate enterprises on existing challenges and how to run cloud-native environments in production, which should include a secure DevOps approach.”
+
+
+
+# Remote companies
+
+Top 10 remote companies: Appen, Lionbridge, VIPKID, Liveops, Working Solutions, Kelly Services, EF - Education First, SYKES, Concentrix, Williams-Sonoma
