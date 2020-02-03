@@ -132,7 +132,7 @@ The engine allows to freeze a process if a certain condition met in order to hel
 
 * Is YALAS aware of light threads, Go routines?
 
-This is something that possilble, but not implemented yet.
+Go routines support is in progress. The kernel driver collects address of the user stack. The application maps all stacks, follows Go routines lifecycle. The model reflects the Go routines life cycle.
 
 * Guardicore ?
 
