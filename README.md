@@ -120,7 +120,7 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 
 # Q&A
 
-* Is it a Prometheus?
+* Is it like Prometheus?
 
 No, YALAS is a generic system monitor which does not require any dedicated code in the container. YALAS collects system calls performed by the applications.YALAS goal is to catch zero days targeting containers. 
 
@@ -130,6 +130,10 @@ The engine dedups the events, figures out repetitive patters, catches deviations
 This is done for any process/kernel thread in the container and for any container on a VM.
 
 The engine allows to freeze a process if a certain condition met in order to help investigating. 
+
+* Is it like Jaeger?
+
+YALAS can collect and store packets using an arbiratry set of rules. YALAS does not require any modification of the sources code. Addign support for protobuf is in progress.    
 
 * Is YALAS aware of light threads, Go routines?
 
