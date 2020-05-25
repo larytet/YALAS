@@ -133,7 +133,7 @@ The engine allows to freeze a process if a certain condition met in order to hel
 
 * Is it like Jaeger?
 
-YALAS can collect and store packets using an arbiratry set of rules. YALAS does not require any modification of the sources code. Addign support for protobuf is in progress.    
+YALAS can collect and store packets using an arbiratry set of rules. YALAS does not require any modification of the sources code. Adding support for protobuf is in progress.    
 
 * Is YALAS aware of light threads, Go routines?
 
