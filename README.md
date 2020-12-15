@@ -143,3 +143,7 @@ Go routines support is in progress. The kernel driver collects address of the us
 * Guardicore ?
 
 Guardicore Centra carefully watches networking, maps end points communication, enforces a set of rules defined by the client. The existing product has minimal support for docker, does not collect file system events, does not follow process/thread life cycle, does not perform DPI. 
+
+* Veronis/Imperva?
+
+There is a small overlap between WAP/DAP and YALAS. YALAS can be used for logging the events, audit of the transactions. YALAS out of box does not have application layer awareness.
