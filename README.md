@@ -146,4 +146,4 @@ Guardicore Centra carefully watches networking, maps end points communication, e
 
 * Veronis/Imperva?
 
-There is a small overlap between WAP/DAP and YALAS. YALAS can be used for logging the events, audit of the transactions. YALAS out of box does not have application layer awareness.
+There is a small overlap between WAP/DAP and YALAS. YALAS can be used for logging of network events, audit of the transactions. YALAS out of box does not have application layer awareness.
