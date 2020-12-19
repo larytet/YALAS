@@ -151,7 +151,7 @@ There is a small overlap between WAP/DAP and YALAS. YALAS can be used for loggin
 
 * Calico? Istio?
 
-Behavior of a pod is not a sum of behaviors  of containers from the security point of view, What one container in a pod is allowed to do is not necessary what another container should do. For example, a main container in a pod will read/write to Redis, connect to Kafka, load secrets. The Jaeger side car in the same pod wont do and should not do anything of this stuff.As far as I am aware there are not many products providing kernel thread granularity, which is what I do. I am not aware of any open source product which does this. I know only about two commercial products doing this low level. Light threads awareness is not existing. I believe that eventually we all will routinely install systems with low levels of granularity in our VMs.
+Behavior of a pod is not a sum of behaviors  of containers from the security point of view. What one container in a pod is allowed to do is not necessary what another container should do. For example, a main container in a pod will read/write to Redis, connect to Kafka, load secrets. The Jaeger side car in the same pod wont do and should not do anything of this stuff. There are not many products providing kernel thread granularity, which is what YALAS doe. Light threads awareness is not existing. I believe that eventually we all will routinely install systems with low levels of granularity in our VMs.
 
 * Sysdig Falco?
 
