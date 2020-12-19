@@ -106,12 +106,13 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * https://www4.comp.polyu.edu.hk/~csxluo/DNSINFOCOM18.pdf
 * https://github.com/jaegertracing/jaeger
 * https://www.twistlock.com/labs-blog/
-* https://github.com/draios/sysdig https://www.businessinsider.com/30-cybersecurity-startups-2019-3
+* https://github.com/draios/sysdig https://sysdig.com/opensource/falco/ https://www.businessinsider.com/30-cybersecurity-startups-2019-3
 * https://www.styra.com/
 * https://www.aporeto.com/
 * https://gvisor.dev/
 * https://www.aquasec.com/
 * https://www.guardicore.com/ 
+* https://caylent.com/50-useful-kubernetes-tools-for-2020
 * Presentation https://docs.google.com/presentation/d/1SbedZdJR9A78U-MkATPCbj5dN6MRX0HBQbU4xk-q0Qw/edit?usp=sharing
 * According to this ad CrowdStrike attempts to do something similar: "This role will be part of the team designing and implementing new features to surface containers as logical end-points in the end-to-end Falcon product. These features will deliver the power of the Falcon end-point protection platform for Docker and other container implementations built on top of LXC". https://www.linkedin.com/jobs/view/2282865203  https://www.linkedin.com/jobs/view/2313573544
 
@@ -148,6 +149,10 @@ Guardicore Centra carefully watches networking, maps end points communication, e
 
 There is a small overlap between WAP/DAP and YALAS. YALAS can be used for logging of network events, audit of the transactions. YALAS out of box does not have application layer awareness.
 
-* Calico/Istio?
+* Calico? Istio?
 
 Behavior of a pod is not a sum of behaviors  of containers from the security point of view, What one container in a pod is allowed to do is not necessary what another container should do. For example, a main container in a pod will read/write to Redis, connect to Kafka, load secrets. The Jaeger side car in the same pod wont do and should not do anything of this stuff.As far as I am aware there are not many products providing kernel thread granularity, which is what I do. I am not aware of any open source product which does this. I know only about two commercial products doing this low level. Light threads awareness is not existing. I believe that eventually we all will routinely install systems with low levels of granularity in our VMs.
+
+* Sysdig Falco?
+
+YALAS and Sysdig Falco have a significant overlap. YALAS supports the run-time detection and prevention. One of the YALAS main goals is an automatic generating of formal enforcement policies and rules.
