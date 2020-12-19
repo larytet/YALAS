@@ -114,6 +114,7 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * https://www.guardicore.com/ 
 * https://caylent.com/50-useful-kubernetes-tools-for-2020
 * Presentation https://docs.google.com/presentation/d/1SbedZdJR9A78U-MkATPCbj5dN6MRX0HBQbU4xk-q0Qw/edit?usp=sharing
+* Video https://www.youtube.com/watch?v=sPUehb_3kyU&feature=youtu.be&t=238
 * According to this ad CrowdStrike attempts to do something similar: "This role will be part of the team designing and implementing new features to surface containers as logical end-points in the end-to-end Falcon product. These features will deliver the power of the Falcon end-point protection platform for Docker and other container implementations built on top of LXC". https://www.linkedin.com/jobs/view/2282865203  https://www.linkedin.com/jobs/view/2313573544
 
 # Issues discovered by YALAS
