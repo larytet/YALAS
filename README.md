@@ -4,7 +4,7 @@ A typical container relies on hundreds and ocassioally thousands of external pac
 
 YALAS helps to generate and enforce the set of rules a container should follow.
 
-YALAS has two components - a small kernel driver and an agent running in the VM's user space and taking care of the behavioural model.  YALAS learns what is the "correct behaviour" when the container is under the system test/unitest. YALAS automatically generates a set of rules which describe the expected behaviour. In the production environment the tool alerts the administrator if the behaviour deviates from the previously observed behaviour (breaks the rules). Yes, YALAS is as good as it sounds. 
+YALAS has two components - a small kernel driver and an agent running in the VM's user space and taking care of the behavioural model.  YALAS learns what is the "correct behaviour" when the container is under the system test/unitest. YALAS automatically generates a set of rules describing the expected behaviour. In the production environment the tool alerts the administrator if the behaviour deviates from the previously observed behaviour (breaks the rules). Yes, YALAS is as good as it sounds. 
 
 The code base is producton grade and ready for deployment. If your company needs this tool do not hesitate to contact me via **[Issues](https://github.com/larytet/YALAS/issues)** or **[LinkedIn](https://www.linkedin.com/in/arkadymiasnikov/)**. 
 
