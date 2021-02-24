@@ -1,6 +1,6 @@
 # Yet another Linux audit system (YALAS)
 
-A typical container relies on hundreds and ocassioally thousands of external packages. I routinely encounter *go.sum* files 1KLOC and more. This is not feasible to verify all dependencies, proof read the code of hundreds of packages. Some packages have binary parts and can not be verified. The problem affects companies  small and large. R&D saves time by incorporating the 3rd party code. This is inevitable. The alternative is an expensive "not invented here" syndrom.
+A typical container relies on hundreds and ocassioally thousands of external packages. I routinely examine *go.sum* files 1KLOC and more. This is not feasible to verify all dependencies, proof read the code of hundreds of packages. Some packages have binary parts and can not be verified. The problem affects companies  small and large. R&D saves time by incorporating the 3rd party code. This is inevitable. The alternative is an expensive "not invented here" syndrom.
 
 YALAS helps to generate and enforce the set of rules a container should follow.
 
