@@ -123,6 +123,7 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * According to this ad CrowdStrike attempts to do something similar: "This role will be part of the team designing and implementing new features to surface containers as logical end-points in the end-to-end Falcon product. These features will deliver the power of the Falcon end-point protection platform for Docker and other container implementations built on top of LXC". https://www.linkedin.com/jobs/view/2282865203  https://www.linkedin.com/jobs/view/2313573544
 * https://sentry.io/
 * https://newrelic.com/
+* Kernel data flow diagram https://the-linux-channel.the-toffee-project.org/i/LINKS/1/Network%20API%20and%20data%20flow%20within%20Linux%20kernel.png
 
 
 # Issues discovered by YALAS
