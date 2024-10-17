@@ -1,10 +1,10 @@
 # Yet another Linux audit system (YALAS)
 
-A typical container relies on hundreds and ocassioally thousands of external packages. I routinely examine *go.sum* files 1KLOC and more. This is not feasible to verify all dependencies, proof read the code of hundreds of packages. Some packages have binary parts and can not be verified. The problem affects companies  small and large. R&D saves time by incorporating the 3rd party code. This is inevitable. The alternative is an expensive "not invented here" syndrom.
+A typical container relies on hundreds, sometimes even thousands, of external packages. I regularly review go.sum files with over 1,000 lines of code. It’s not feasible to verify all dependencies or review the code of hundreds of packages, especially when some include binary components that cannot be easily verified. This problem affects companies of all sizes. R&D teams save time by using third-party code—an unavoidable necessity. The alternative is the costly "not invented here" syndrome.
 
-YALAS helps to generate and enforce the set of rules a container should follow.
+YALAS helps by generating and enforcing a set of rules that a container should follow.
 
-YALAS has two components - a small kernel driver and an agent running in the VM's user space and taking care of the behavioural model.  YALAS learns what is the "correct behaviour" when the container is under the system test/unitest. YALAS automatically generates a set of rules describing the expected behaviour. In the production environment the tool alerts the administrator if the behaviour deviates from the previously observed behaviour (breaks the rules). Yes, YALAS is as good as it sounds. 
+YALAS consists of two components: a small kernel driver and an agent running in the VM's user space, which handles the behavioral model. YALAS learns the "correct behavior" of a container during system or unit tests and automatically generates a set of rules to describe this expected behavior. In production, YALAS alerts the administrator if the behavior deviates from what was previously observed (breaking the rules). Yes, YALAS is as good as it sounds.
 
 The code base is producton grade and ready for deployment. If your company needs this tool do not hesitate to contact me via **[Issues](https://github.com/larytet/YALAS/issues)** or **[LinkedIn](https://www.linkedin.com/in/arkadymiasnikov/)**. 
 
@@ -135,14 +135,15 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 
 * Is it like Prometheus?
 
-No, YALAS is a generic system monitor which does not require any dedicated code in the container. YALAS collects system calls performed by the applications.YALAS goal is to catch zero days targeting containers. 
+No, YALAS is a generic system monitor that doesn’t require any dedicated code in the container. YALAS collects system calls made by applications, with the goal of catching zero-day attacks targeting containers.
 
-YALAS facilitates incident response, forensics. The engine allow placing an arbitrary test point in the code and monitoring the performance of the code in this point. There is no need to rebuild anything. Any system call the application performs will be collected, time stamped by the kernel.
+YALAS also aids in incident response and forensics. The engine allows you to place arbitrary test points in the code and monitor performance at those points without needing to rebuild anything. Every system call made by the application is collected and timestamped by the kernel.
 
-The engine dedups the events, figures out repetitive patters, catches deviations from the previous behavior
-This is done for any process/kernel thread in the container and for any container on a VM.
+The engine deduplicates events, identifies repetitive patterns, and detects deviations from normal behavior. This is done for any process or kernel thread in the container, and for any container on a VM.
 
-The engine allows to freeze a process if a certain condition met in order to help investigating. 
+Additionally, the engine can freeze a process if certain conditions are met, assisting in investigation efforts.
+
+
 
 * Is it like Jaeger?
 
