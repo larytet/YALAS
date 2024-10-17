@@ -166,4 +166,5 @@ The behavior of a pod is not simply the sum of the behaviors of its containers f
 
 * Sysdig Falco?
 
-YALAS and Sysdig Falco have a significant overlap. YALAS supports the run-time detection and prevention. One of the YALAS main goals is an automatic generation of formal enforcement policies and rules.
+YALAS and Sysdig Falco have significant overlap. YALAS supports both run-time detection and prevention. One of YALAS's main goals is the automatic generation of formal enforcement policies and rules.
+
