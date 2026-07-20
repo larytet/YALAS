@@ -125,11 +125,12 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 * https://newrelic.com/
 * Kernel data flow diagram https://the-linux-channel.the-toffee-project.org/i/LINKS/1/Network%20API%20and%20data%20flow%20within%20Linux%20kernel.png
 * https://www.upwind.io/
+* https://tetragon.io/
 
 
 # Issues discovered by YALAS
 
-* https://github.com/golang/go/issues/36640
+* https://github.com/golang/go/issues/36640Tetragon
 
 # Q&A
 
