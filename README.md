@@ -130,7 +130,7 @@ Applying Markov process I get 59% vs 1.4% for "good" and "bad" symbol
 
 # Issues discovered by YALAS
 
-* https://github.com/golang/go/issues/36640Tetragon
+* https://github.com/golang/go/issues/36640
 
 # Q&A
 
